@@ -1,0 +1,30 @@
+# PDF Extraction
+PyMuPDF>=1.23.0
+pdfplumber>=0.10.0
+
+# Text Processing
+langchain>=0.3.0
+langchain-text-splitters>=0.3.0
+tiktoken>=0.7.0
+
+# Embedding
+sentence-transformers>=3.0.0
+torch>=2.1.0
+
+# Vector Database
+chromadb>=0.5.0
+
+# Knowledge Graph
+networkx>=3.2
+spacy>=3.7.0
+
+# LLM API
+openai>=1.50.0  # DeepSeek uses OpenAI-compatible API
+
+# Web Interface
+streamlit>=1.35.0
+
+# Utilities
+python-dotenv>=1.0.0
+tqdm>=4.66.0
+pandas>=2.2.0
