@@ -139,8 +139,9 @@ class ThinkingStructureExtractor:
 
         for i, article in enumerate(to_process):
             fname = article.get("filename", "")
-            if fname in existing and not force:
-                results.append(existing[fname])
+            fname_key = fname.replace(".pdf", "").strip()
+            if fname_key in existing and not force:
+                results.append(existing[fname_key])
                 continue
 
             print(f"[思维提取 {i+1}/{len(to_process)}] {fname[:60]}...")
